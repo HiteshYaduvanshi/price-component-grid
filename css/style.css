@@ -1,0 +1,130 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 30%, 92%);
+    font-family: 'Karla', sans-serif;
+}
+
+.maindiv{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    background-color: whitesmoke;
+    width: 80rem;
+    border-radius: 1rem;
+    z-index: 1;
+    box-shadow:4px 4px 4px 1px rgba(0,0,0,0.16);
+    height: auto;
+    margin: 8rem 2rem;
+}
+
+.details{
+    /* background-color:hsl(179, 62%, 43%); */
+    grid-column: 1/-1;
+    padding: 5rem;
+
+}
+
+.heading_one{
+    color: hsl(179, 62%, 43%);
+    font-size: 4rem;
+}
+
+.heading_two{
+    color: hsl(71, 73%, 54%);
+    font-size: 3rem;
+    margin: 3rem 0rem 2rem 0rem;
+
+}
+
+.info{
+    color: hsl(218, 22%, 67%);
+    font-size: 2rem;
+    /* letter-spacing: 0.2rem; */
+    /* margin-bottom: 3rem; */
+}
+
+.priceing{
+    background-color:hsl(179, 62%, 43%);
+    padding: 5rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.price_heading{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.price{
+    font-size: 4rem;
+    color: whitesmoke;
+    margin-top: 2rem;
+}
+
+span{
+    color: hsl(180, 8%, 81%);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.price_detail{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: hsl(180, 0%, 86%);
+}
+
+button{
+    width: 30rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    background-color: hsl(71, 73%, 54%);
+    color: whitesmoke;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    box-shadow:4px 4px 4px 1px rgba(0,0,0,0.16);
+    cursor: pointer;
+}
+
+.why_us{
+    background-color: hsl(179, 50%, 50%);
+    padding: 5rem;
+    border-bottom-right-radius: 1rem;
+}
+
+ul{
+    margin-top: 3rem;
+}
+
+li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 3rem;
+    padding: 0.3rem;
+    color: hsl(180, 33%, 89%);
+}
+
+@media only screen and (max-width:600px){
+    .maindiv{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
